@@ -1,0 +1,125 @@
+.huadong {
+    .row {
+        overflow: hidden;
+    }
+    h3 {
+        font-weight: bolder;
+        color: #000000;
+        border-bottom: 1px dotted #000000;
+        padding-bottom: 10px;
+         @media only screen and (max-width: 768px) {
+             text-align: center;
+         }
+        small {
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-size: 10px;
+            margin-right: 3px;
+             @media only screen and (max-width: 768px) {
+             margin-left: 100px;
+         }
+        }
+    }
+    
+    .row:first-child ul,
+    .row:first-child+.row+.row ul {
+        animation: huadong 100s infinite linear;
+        @media only screen and (max-width: 768px) {
+            animation:none;
+            max-width: 80%;
+//          width: 500px;
+            text-align: center;
+//          background: red;
+            li {
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 60%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .row ul
+    {
+        
+        @media only screen and (max-width: 768px) {
+            animation:none;
+            max-width: 80%;
+//          width: 500px;
+            text-align: center;
+//          background: red;
+            li {
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 60%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    ul {
+        width: 2500px;
+        overflow: hidden;
+        &:hover {
+            animation: backwards;
+        }
+        li {
+            float: left;
+            margin-right: 60px;
+            margin-left: 0;
+            text-align: center;
+            img {
+                width: 245.5px;
+                height: 134.39px;
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@keyframes huadong {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -2139px;
+    }
+}
+.aboutwe {
+    h3 {
+        border-bottom: 1px dotted #000000;
+        padding-bottom: 10px;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        small {
+            display:inline-block;
+            
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            margin-right: 3px;
+        }
+    }
+    ul li {
+        float: left;
+        margin-right: 4px;
+        p {
+            font-weight: bold;
+        }
+    }
+}
+.dongtai {
+    border-left: 1px solid #CCCCCC;
+    h5 {
+        line-height: 20px;
+    }
+      
+   
+}
