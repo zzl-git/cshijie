@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	$('.carousel').carousel({
-	  interval: 1000
+	  interval: 3000
 	});
 })
 var num =1;
@@ -18,4 +18,20 @@ $('.shuliang .jian').click(function(){
 		num--;
 	}
 	$('.shuliang .shu').html(num);
+})
+ num=0;
+var timer = setInterval(zhizhen,30);
+function zhizhen (){
+	num++;
+	if(num==100){
+		num=0;
+	}
+	$('main[role="main"] .container-fluid>p>b').css("width",num+"%");
+}
+$('main[role="main"] .container-fluid').mouseenter(function(){
+	clearTimeout(timer);
+})
+$('main[role="main"] .container-fluid').mouseleave(function(){
+	num=0;
+	timer=setInterval(zhizhen,30);
 })
